@@ -1,0 +1,234 @@
+/* CSS Document */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+:focus {
+  outline: 0; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  font: 62.5% Arial, Helvetica, sans-serif;
+  line-height: 1; }
+
+html, body {
+  height: 100%; }
+
+blockquote, q {
+  quotes: none; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none; }
+
+button {
+  background: #ccc;
+  border:1px solid #888;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  font: 2em Arial, Helvetica, sans-serif;
+  height: 2em;
+  padding: 0 1em;
+  cursor: pointer;
+}
+button:hover {
+  background: #ddd;
+}
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+
+input[type="number"],
+input[type="text"],
+input[type="password"],
+textarea {
+  border: 1px solid #555;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkt-border-radius: 3px;
+  color: #555;
+  font: 1.3em Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+.input {
+  display: block;
+}
+.input input[type="text"],
+.input input[type="number"] {
+  padding: 7px 4px 6px;
+}
+.input_in {
+  display: block;
+  padding: 0 10px 0 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.2em 0 0;
+  line-height: 1.2;
+}
+h1 {font-size:3em;}
+h2 {font-size:2.7em;}
+h3 {font-size:2.4em;}
+h4 {font-size:2.1em;}
+h5 {font-size:1.8em;}
+h6 {font-size:1.5em;}
+
+ol, ul {
+  list-style: none;
+}
+
+p, li {
+  font-size:1.5em;
+  line-height:1.2;
+  margin:1.2em 0;
+  -webkit-text-size-adjust:none;
+}
+
+strong {
+  font-weight: bold; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left; }
+
+/*---helpers---*/
+.border {
+  border: 1px solid black; }
+
+/*---classes---*/
+.ceiling {
+  padding: 1px 0 0;
+}
+
+.container {
+  border: 1px solid #555;
+  margin:3em auto 0;
+  padding: 20px;
+  width: 600px;
+}
+.container:after {
+  clear: both;
+  content: '.';
+  display: block;
+  height: 0;
+  visibility: hidden;
+  width: 0;
+}
+.container h1 {
+  font-size: 2.5em;
+  margin: 0;
+  text-align: center;
+}
+
+.container_col {
+  float: left;
+  width:43%;
+}
+.container_col.i_2 {
+  float: right;
+  width: 54%;
+}
+
+.data {
+  margin: 3em 0 0;
+}
+.data h2 {
+  font-size: 1.8em;
+  margin: 0 0 0.5em;
+  text-align: center;
+}
+.data_field {
+  display: block;
+  font-size: 1.3em;
+  margin: 0 0 1.5em;
+}
+.data_label {
+  display: block;
+  margin: 0 0 0.5em;
+}
+.data_btn {
+  text-align: center;
+}
+.data_result {}
+.data_result sup {
+  font-size: 0.7em;
+  position: relative;
+  top: -0.6em;
+}
+.data_result_val {
+  font-weight: bold;
+}
+.data_conclusion {
+  color: #f00;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.tab {
+  font-size: 1.5em;
+  margin:2.2em 0 0;
+  width: 100%;
+}
+.tab th,
+.tab td {
+  border: 1px solid #000;
+  padding: 12px 5px;
+}
+.tab th {
+  /*background: #98EA96;*/
+  font-weight: bold;
+  text-align: center;
+}
+.tab td {}
+.tab td:first-child {
+  text-align: center;
+}
+.tab_chosen td {
+  background: #FFB8B7;
+}
+.tab_chosen.tab_norm td {
+  background: #98EA96;
+}
+.tab_col.i_1 {
+  width: 41%;
+}
+.tab_h td {
+  /*background: #FFB8B7;*/
+  font-weight: bold;
+}
+
+
+/*--- wrapper ---*/
+.wrapper {
+  min-height: 100%;
+  min-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}

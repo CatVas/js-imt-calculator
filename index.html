@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Калькулятор індексу маси тіла</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css"/>
+  <!--[if lte IE 7]>
+    <link rel="stylesheet" type="text/css" href="css/ie.css"/>
+  <![endif]-->
+
+  <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="ceiling"></div>
+    
+    <article class="container">
+      <h1>Калькулятор визначення індексу маси тіла (ІМТ)</h1>
+
+      <div class="container_col">
+        <section class="data">
+          <h2>Вхідні дані</h2>
+          <label class="data_field">
+            <span class="data_label">Введіть Вашу масу в кілограмах:</span>
+            <span class="input">
+              <span class="input_in">
+                <input id="bodyweight" type="text" name="weight" value="Ваша маса в кілограмах" onfocus="if(this.value=='Ваша маса в кілограмах'){this.value=''}" onblur="if(this.value==''){this.value='Ваша маса в кілограмах'}">
+              </span>
+            </span>
+          </label>
+          <label class="data_field">
+            <span class="data_label">Введіть Ваш зріст у сантиметрах:</span>
+            <span class="input">
+              <span class="input_in">
+                <input id="bodyheight" type="text" name="height" value="Ваш зріст у сантиметрах" onfocus="if(this.value=='Ваш зріст у сантиметрах'){this.value=''}" onblur="if(this.value==''){this.value='Ваш зріст у сантиметрах'}">
+              </span>
+            </span>
+          </label>
+          <div class="data_btn">
+            <button id="btn" class="btn" type="submit">Порахувати ІМТ</button>
+          </div>
+        </section><!-- data -->
+        
+        <section class="data">
+          <h2>Результат</h2>
+          <p class="data_result">Ваш індекс маси тіла: <strong class="data_result_val" id="data_result_val">XX,XX</strong> кг/м<sup>2</sup>.</p>
+          <p id="data_conclusion" class="data_conclusion">Тут буде підпис-висновок</p>
+        </section><!-- data -->
+      </div><!-- container_col -->
+
+      <div class="container_col i_2">
+        <aside>
+          <table class="tab" id="tab">
+            <colgroup>
+              <col span="1" class="tab_col i_1">
+              <col span="1">
+            </colgroup>
+            <tr>
+              <th>Індекс маси тіла</th>
+              <th>Класифікація</th>
+            </tr>
+            <tr>
+              <td>Менше 18,5</td>
+              <td>Недостатня маса</td>
+            </tr>
+            <tr class="tab_norm">
+              <td>18,5 - 24,9</td>
+              <td>Норма</td>
+            </tr>
+            <tr>
+              <td>25,0 - 29,9</td>
+              <td>Передожиріння</td>
+            </tr>
+            <tr class="tab_h">
+              <td colspan="2">Гладкість</td>
+            </tr>
+            <tr>
+              <td>30,0 - 34,9</td>
+              <td>Ожиріння I ступеня</td>
+            </tr>
+            <tr>
+              <td>35,0 - 39,9</td>
+              <td>Ожиріння II ступеня</td>
+            </tr>
+            <tr>
+              <td>Понад 40,0</td>
+              <td>Ожиріння III ступеня</td>
+            </tr>
+          </table><!-- tab -->
+        </aside>
+      </div><!-- container_col -->
+    </article><!-- container -->
+
+  </div><!-- wrapper -->
+  <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
